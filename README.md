@@ -79,7 +79,7 @@ app.listen(port, () => {
   console.log(`Your first Express app is successfully running! You can view the output of this app at http://localhost:${port}`)
 })
 ```
-To start the apllication use:
+To start the application use:
 ```bash
 node app.js
 ```
