@@ -1,0 +1,21 @@
+services:
+  backend:
+    container_name: backend-cointainer
+    restart: always
+    build: ./backend
+    ports:
+      - "3001:3001"
+    networks:
+      - fullstack
+  frontend:
+    container_name: frontend-container
+    restart: always
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - fullstack
+
+networks:
+  fullstack:
+    driver: bridge
