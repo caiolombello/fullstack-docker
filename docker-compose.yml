@@ -6,13 +6,13 @@ services:
     ports:
       - "3001:3001"
     networks:
-      - fullstack
+      - fullstack 
   frontend:
     container_name: frontend-container
     restart: always
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "8080:8080"
     networks:
       - fullstack
 
